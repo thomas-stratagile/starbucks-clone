@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <div>
-      {showInstallButton && (
+      {/* {showInstallButton && (
         <button
           onClick={handleInstallClick}
           style={{
@@ -69,7 +69,7 @@ const App = () => {
         >
           Add to Home Screen
         </button>
-      )}
+      )} */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
