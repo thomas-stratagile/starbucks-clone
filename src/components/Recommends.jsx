@@ -1,6 +1,8 @@
 import { recommends } from "../data/data";
+import { useCart } from '../context/CartContext';
 
 const Recommends = () => {
+  const { addItemToCart } = useCart();
   return (
     <div>
       <div className="w-full py-3 bg-[#edebe9] my-5 lg:px-28">
@@ -24,7 +26,10 @@ const Recommends = () => {
               </div>
               <div className="flex justify-between items-center pt-4">
                 <h6 className="pt-2">${item.price}</h6>
-                <button className="bg-[#00754A] rounded-full px-3 py-1 text-white">
+                <button
+                  className="bg-[#00754A] rounded-full px-3 py-1 text-white"
+                  onClick={() => addItemToCart(item)}
+                >
                   Add Item
                 </button>
               </div>
