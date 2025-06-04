@@ -1,6 +1,7 @@
 {
-  "short_name": "ReactPWA",
-  "name": "React PWA App",
+  "short_name": "Starbucks Clone",
+  "name": "Starbucks Clone PWA",
+  "description": "A Starbucks clone progressive web application.",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -14,7 +15,8 @@
     }
   ],
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#00704A",
   "background_color": "#ffffff"
 }
